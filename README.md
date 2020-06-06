@@ -30,7 +30,7 @@ We have implemented decision tree on the lines of ID3 algorithm , initially we h
 Once the final split is done , we caluclate the purity , which is basically the the percentage of an orientation in the split and we consider the orientation with maxium number of samples in the split ,if this purity % is greater than 70 we , create a leaf node for this split and continue caluclating the purity for the right split. If at all the purity is less than 70 percentage we continue splitting the 
 left split data and continue this process untill we reach the desired maximum depth of the tree. <br><br>
 
-![alt text](https://github.iu.edu/cs-b551-fa2019/rparvat-nakopa-pvajja-a4/blob/master/5.PNG)
+![alt text](5.PNG)
 
 Once we have reached the maximum depth of the tree , we are adding that split and it's maximum orientation in that split/sample as the leaf node.While generating the tree node , we keep track of the maximum purity ,orientations and the data on which it has achieved the maximum purity .One the whole tree is built ,we traverse the tree and reach these leaf nodes and find out the orientation for that split and find the number of correctly classified samples and do the same for all the leaf nodes and sum them up and find out the percentage of the classfied samples from the train .We have recieved the train accuracy based on different heights ..ranging from 56 percentage to 64 percentage points.While our test accuracy is often quite low, partly because the way the decision tree is structured and it was challenging to recursively traverse the tree and update the orientations and data .<br><br>
 
